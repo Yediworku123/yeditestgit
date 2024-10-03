@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitello Tonnato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="kichen.css"> <!-- Your external CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i> Vitello Tonnato</a>
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars" aria-label="Menu"></i>
+            <i class="fas fa-search" id="search-icon" aria-label="Search"></i>
+            <a href="#" class="fa fa-heart" aria-label="Favorites"></a>
+            <a href="#" class="fa fa-shopping-cart" aria-label="Cart"></a>
+        </div>
+    </header>
+
+    <!-- Your original search bar remains unchanged here -->
+    <div id="search-form">
+        <input type="text" id="search-box" placeholder="Search here...">
+        <button id="close-search-form">Close</button>
+    </div>
+    <section class="home" id="home">
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <!-- Slider Controls -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>lazana</h3>
+                        <p>La lasanha è una meraviglia italiana con il suo saporito e cremoso ripieno.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="foods/lazana.jpg" alt="lazana">
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>croissant</h3>
+                        <p>La croissant è una deliziosa pasticceria con il suo saporito e croccante strato.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="foods/Croissant.jpg" alt="croissant">
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                         <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>Los noodles picantes son deliciosos, especialmente si se combinan con una salsa sabrosa.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="spageti.jpg" alt="spicy noodles">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading">our dishes</h3>
+        <h1 class="heading">popular dishes</h1> <!-- Changed closing tag from h3 to h1 -->
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="foods/chicken-skewers-with-slices-sweet-peppers-dill.jpg" alt="Chicken Skewers">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$20.6</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="foods/burger.png" alt="Burger">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$30.4</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="foods/lobster.jpg" alt="Lobster">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$20.6</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="foods/makoroni.jpg" alt="Macaroni">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$20.6</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="foods/Doubleburger.png" alt="Double Burger">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$20.6</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="foods/ice-cream.jpg" alt="Macaroni">
+                <h3>tasty food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>$20.6</span>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h3 class="sub-heading">about us</h3>
+        <h1 class="heading">why   choose   us?</h1>
+        <div class="row">
+            <div class="image">
+                <img src="foods/top-view-table-full-delicious-food-composition.jpg">
+
+            </div>
+            <div class="content">
+                <h3>Best food in the country  </h3>
+                <p>
+                    "Benvenuti al ristorante Vitello Tonnato, dove la tradizione culinaria italiana incontra la creatività moderna. Da noi, ogni piatto racconta una storia, una storia fatta di ingredienti freschi e genuini, selezionati con cura dai migliori fornitori locali e internazionali. La nostra missione è semplice: offrire un'esperienza gastronomica indimenticabile che delizi i sensi e crei ricordi duraturi. Che tu stia cercando un pasto intimo o una celebrazione con gli amici, il nostro ambiente accogliente e il nostro personale cordiale sono qui per assicurarti una serata perfetta. Vieni a scoprire il vero sapore dell'Italia nel cuore della nostra cucina!"
+                </p>
+                <p>
+                    "La nostra cucina è un omaggio ai sapori autentici dell'Italia, un viaggio attraverso le regioni, dai profumi del Mediterraneo alle delizie dell'entroterra. Ogni giorno, il nostro chef e la sua squadra mettono passione e creatività nei loro piatti, combinando tecniche tradizionali con tocchi moderni per creare qualcosa di veramente speciale. Siamo orgogliosi di offrire un menu che varia con le stagioni, riflettendo la ricchezza e la diversità del nostro patrimonio culinario. Al Vitello Tonnato, crediamo che ogni pasto sia un'opportunità per celebrare la vita, la famiglia e l'amicizia."
+                </p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons-container">
+                        <div class="icons">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>easy payments</span>
+                        </div>
+                        <div class="icons-container">
+                            <div class="icons">
+                                <i class="fas fa-headset"></i>
+                                <span>24/7 service</span>
+                            </div>
+                </div>
+                <a href="#" class="btn" >learn more</a>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">our menu</h3>
+        <h1 class="heading">today's specality</h1>
+       <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="foods/chicken.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>Il pollo arrosto: delizia italiana. Cuocito al forno fino a raggiungere la giusta crosta dorata, è perfetto da servire con carciofi, patate al forno o salsa agrodolce."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/pizza.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>""La pizza, classico della cucina italiana, con crosta croccante e impasto morbido. Perfetta come sfizio o come pranzo. Sapore unico e irripetibile."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/rice meet.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>"Riso con carne: classico della cucina italiana. Carne tenera e saporita insieme al riso. Abbinamento gustoso e appagante."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/Tacos.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>"Tocco: significato italiano per 'toccare.' Può riferirsi a toccare fisicamente o a toccare artisticamente, toccando un tasto emotivo o semplicemente un cuore."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/salad.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>cibo leggero, sano e rinfrescante. A base di frutta e verdura fresca, vari modi di preparazione, perfetto come antipasto o contorno. Ottimo per la dieta."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/Ramen.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>"Il romen è un piatto sostanzioso della cucina italiana, fatto con pasta lunga, carne e verdura, perfetto per un pasto familiare o con amici."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/donat.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p> tipica pasticceria americana, morbida e fritta, con pasta soffice e ripieni o glassata. Ideale per colazione o spuntino pomeridiano."</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/lobster.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p> crostaceo pregiato e prelibato, apprezzato per il suo dolce sapore e ricco di proteine. Cucinato in vari modi, una delizia per gli amanti del mare.</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="foods/Doubleburger.png" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content"> 
+                <div class="stars">
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star"></i>
+                    <i class= "fas fa-star-half-alt"></i>
+                </div>
+                <h3>delicous foods</h3>
+                <p>piatto della cucina americana, famoso in tutto il mondo. Carne tritata cotta a piastra o sulla griglia e servita in un panino con vari condimenti e accompagnamenti.</p>
+                <a href="#" class="btn"> add to cart</a>
+                <span class="pice">$12.99</span>
+                  </div>
+        </div>
+
+        
+      
+      
+    
+    
+    </div>
+
+
+    <section class="review" id="review">
+        <h3 class="sub-heading">Customer's review</h3>
+        <h1 class="heading">what they say about us</h1>
+        <div class="swiper-container  review-slider ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="rev1.jpg" alt="User 1">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>An exceptional experience from start to finish! The service was impeccable, and the food exceeded all expectations.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="rev2.jpg" alt="User 2">
+                        <div class="user-info">
+                            <h3>Jane Doe</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The ambiance was perfect, and the staff were friendly. A delightful dining experience overall.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="rev3.jpg" alt="User 3">
+                        <div class="user-info">
+                            <h3>Emily Smith</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Fantastic food and even better service! Definitely coming back again.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order" id="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">free and fast</h1>
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span> your name</span>
+                    <input type="text"  placeholder="enter your name">
+                    </div>
+                    <div class="input">
+                        <span> your number</span>
+                        <input type="number"  placeholder="enter your number">
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="input">
+                            <span> your order</span>
+                            <input type="text"  placeholder="enter your order">
+                            </div>
+                            <div class="input">
+                                <span> additional food </span>
+                                <input type="test"  placeholder="extra with food">
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <div class="input">
+                                    <span> how much</span>
+                                    <input type="number"  placeholder="how many orders">
+                                    </div>
+                                    <div class="input">
+                                        <span> date and time</span>
+                                        <input type="datetime-local">
+                                        </div>
+                                    </div>
+                                    <div class="inputBox">
+                                        <div class="input">
+                                            <span> your address</span>
+                                            <textarea name=""  placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <div class="input">
+                                                <span> your message</span>
+                                            <textarea name=""  placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+                                                </div>
+                                            </div>
+                                            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">Rome </a>
+                <a href="#">Milan </a>
+                <a href="#">Naples </a>
+                <a href="#">Turin </a>
+                <a href="#">Bari </a>
+                <a href="#">Venice</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">dishes </a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">review </a>
+                <a href="#">order</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+1 202-555-0198</a>
+                <a href="#">+44 7700 900123 </a>
+                <a href="#">+61 412 345 678</a>
+                <a href="#">randomuser123@example.com</a>
+                <a href="#">samplemail456@domain.com </a>
+                <a href="#">Rome, italy-400104</a>
+            </div>
+            
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"></a>
+                <a href="#">+44 7700 900123 </a>
+                <a href="#">+61 412 345 678</a>
+                <a href="#">randomuser123@example.com</a>
+                <a href="#">samplemail456@domain.com </a>
+                <a href="#">Rome, italy-400104</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"></a>
+                <a href="#">follow us </a>
+                <a href="#">facebook</a>
+                <a href="#">tweeter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkin</a>
+            </div>
+        </div>
+        <div class="credit"> copyright @ 2024 by<span> yedi</span></div>
+    </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

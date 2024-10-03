@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+:root {
+    --green: #013220;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: "Italianno", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 50%;
+    overflow-x: hidden; /* Allow vertical scrolling, hide horizontal overflow */
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+
+}
+section:nth-child(even){
+    background:whitesmoke ;
+}
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+
+}
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+
+
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: 5rem;
+   cursor: pointer;
+   padding: 3rem 3rem;
+
+}
+.btn:hover{
+  background: green;  
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i {
+    color: var(--green);
+}
+
+header .navbar {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem; /* Adjust padding for better touch targets */
+    color: var(--light-color);
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Adjust hover and active states */
+header .navbar a:hover,
+header .navbar a:focus,
+header .navbar a.active {
+    color: #fff;
+    background: var(--green);
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background-color: #eee;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background change */
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: #fff;
+    background: var(--green);
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Full-screen search form styles */
+#search-form {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192, 192, 192, 0.8); /* Transparent silver color */
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Centering items */
+    justify-content: center; /* Centering items */
+}
+
+
+#search-box {
+    width: 50rem;
+    padding: 1rem;
+    border-bottom: 1rem solid #fff;
+    font-size: 3rem;
+    text-transform: none; /* Increased font size */
+    border: 2px solid #fff; /* Border color */
+    border-radius: 5px; /* Rounded edges */
+    margin-right: 1rem; /* Space between input and button */
+    background: transparent; /* Transparent background */
+    color: #000; /* Text color */
+}
+
+#search-form button {
+    padding: 1rem 2rem; /* Button padding */
+    font-size: 2rem; /* Increased font size */
+    background: #fff; /* Button background color */
+    color: #000; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Change pointer */
+    transition: background 0.3s; /* Transition effect */
+}
+
+#search-form button:hover {
+    background: #ccc; /* Hover color */
+}
+
+.search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap ;
+    gap:2rem;
+    padding-top: 9rem;
+ 
+}
+.home .home-slider .slide .content h3{
+    font-size:5rem; 
+   }
+.home .home-slider .slide .content{
+    flex: 1 1 45rem;
+}
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+
+}
+.home .home-slider .slide .image img{
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for smaller images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 10px
+}
+.home .home-slider .slide .content span{
+ color: var(--green);
+ font-size: 2.5rem;
+}
+.home .home-slider .slide .content h3{
+    color: var(--black);
+    font-size: 7rem;
+   }
+.home .home-slider .slide .content p{
+    color: var(--light-color);
+    font-size: 3rem;
+    padding:4rem;
+    line-height: 1.5rem;
+
+   }
+   
+.dishes .box-container{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem,1fr)) ;
+   gap:4em;
+}
+.dishes .box-container .box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Rounded corners for top of image */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+.dishes .box-container .box{
+    padding: 1rem;
+    background:whitesmoke;
+    border-radius: .5rem;
+    border: 1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position:relative ;
+    overflow:hidden;
+    text-align: center;
+
+
+}
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    position: absolute;
+    top:1.5rem;
+    background:#eee ;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+
+}
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+    background-color: var(--green);
+    color: #eee;
+
+
+}
+.dishes .box-container .box .fa-heart{
+    right: -15rem;
+    
+}
+.dishes .box-container .box .fa-eye{
+    left:-15rem;
+}
+.dishes .box-container .box:hover .fa-heart{
+    right: 1.5rem;
+    
+}
+.dishes .box-container .box:hover .fa-eye{
+    left:1.5rem;
+}
+.dishes .box-container .box img{
+    height:17rem;
+    margin: 1rem 0;
+}
+.dishes .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.dishes .box-container .stars{
+    padding: 1rem 0;
+}
+.dishes .box-container .stars i{
+   font-size: 1.7rem;
+   color: var(--green);
+}
+.dishes .box-container .box span{
+    color: var(--green);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45%;
+    max-width: 45%; /* Ensure the image container doesn't exceed 45% of the row width */
+    display: flex;
+    justify-content: center; /* Center image horizontally within its container */
+}
+
+.about .row .image img {
+    width: 100%; /* Ensure the image scales down within its container */
+    max-width: 100%; /* Prevent the image from exceeding the container's width */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 5px; /* Rounded corners for all sides */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.about .row .content {
+    flex: 1 1 45%; /* Make sure the content takes up 45% of the row width */
+    max-width: 45%; /* Limit content width to 45% of the row width */
+    color: var(--black);
+    font-size: 2rem;
+    padding: 2rem 0; /* Adjust padding for better alignment */
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: center; /* Center text vertically within its container */
+}
+
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 6rem;
+    padding: 2rem 0; /* Adjust padding for better spacing */
+  
+}
+.about .row .content p  {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 0rem 0; /* Adjust padding for better spacing */
+    line-height: 2;
+}
+
+.about .row .content .icons-container {
+    display: flex; /* Use flexbox to align items in a row */
+    gap: 1rem; /* Space between each icon container */
+    flex-wrap: wrap-reverse; /* Allow wrapping if there are too many icons to fit in one row */
+}
+
+.about .row .content .icons-container .icons {
+    background: #eee;
+    border-radius: 0.5rem;
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 12rem; /* Reduce flex-basis to make the containers narrower */
+    padding: 1rem 1rem;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    text-align: center; /* Center text within the icon container */
+}
+
+.about .row .content .icons-container .icons i {
+    font-size: 1rem;
+    color: var(--green);
+}
+
+.about .row .content .icons-container .icons span {
+    display: block; /* Ensure the span takes its own line */
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr)) ;
+    gap:2rem;
+
+}
+.menu .box-container .box{
+    background:#fff;
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+
+}
+.menu .box-container .box .image{
+    height: 25rem;
+    width:100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+
+}
+.menu .box-container .box .image img{
+    height: 100%;
+    width:100%;
+    border-radius:.5rem;
+    object-fit: cover;
+
+}
+.menu .box-container .box .image .fa-heart{
+     position: absolute;
+     top: 2.5rem ; right: 2.3rem;
+     height: 5rem;
+     width: 5rem;
+     line-height: 5rem;
+     text-align: center;
+     font-size: 2rem;
+     background: #fff;
+     border-radius: 50%;
+     color: var(--black);
+
+}
+.menu .box-container .box .image .fa-heart:hover{
+    background-color:var(--green) ;
+    color:#fff;
+}
+.menu .box-container .box .content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars {
+    display: flex; /* Align stars horizontally */
+    gap: 0.5rem; /* Space between each star */
+    margin-bottom: 1rem; /* Space below the stars */
+}
+
+.menu .box-container .box .content .stars i {
+    color: var(--green); /* Ensure the star color is applied */
+    font-size: 1.5rem; /* Adjust the size as needed */
+    line-height: 1; /* Ensure consistent spacing */
+    margin: 0; /* Remove any existing margin */
+    padding: 0; /* Remove any existing padding */
+}
+
+.menu .box-container .box .content .btn {
+    margin-top: 1rem; /* Space between the button and stars */
+}
+
+.menu .box-container .box .content .price {
+    font-size: 1.2rem;
+    color: var(--green); /* Set the price color */
+    font-weight: bold;
+    margin-top: 1rem; /* Space between the price and other elements */
+    display: block; /* Ensure the price is on a new line */
+}
+
+.menu .box-container .box .content h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.menu .box-container .box .content p{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 5rem 0;
+    line-height: 1.5;
+}
+.menu .box-container .box .content .pice{
+    color: var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+.review .slide{
+    padding:1.5rem ;
+    box-shadow: var(--box-shadow);
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    position: relative;
+}
+.review .slide .fa-quote-right{
+    position: absolute;
+    top: 3rem; right: 2rem;
+    font-size: 6rem;
+    color: #fff;
+}
+.review .slide .user{
+    display:flex ;
+    gap: 1.5rem ;
+    align-items: center;
+    padding-bottom: 1.5rem;
+
+}
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius:50% ;
+    object-fit: cover;
+}
+.review .slide .user h3{
+    color: var(--black);
+    font-size:2rem ;
+    padding-bottom: 5rem;
+}
+.review .slide .user i{
+    font-size: 1.3rem;
+    color: var(--green);
+
+}
+.review .slide p{
+    font-size: 2rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
+}
+.order form{
+    max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: 1rem solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 1.5rem;   
+    margin: 0 auto
+    
+}
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.order form .inputBox .input{
+    width: 49%;
+   
+}
+.order form .inputBox .input span{
+    display: block;
+    padding:5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+
+}
+.order form .inputBox .input input,
+.order form .inputBox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+
+}
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border: 1rem solid lightskyblue;
+}
+.order form .inputBox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+.order form .btn{
+    margin-top:0 ;
+}
+
+  
+
+   
+
+
+/* Mobile styles */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+    header {
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 1rem;
+    }
+    .dishes .box-container .box img{
+        height:auto;
+        width:100%
+    }
+    .order form .inputBox .input{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header .navbar {
+        display: none; /* Initially hide the navbar */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        z-index: 999; /* Ensure it appears above content */
+    }
+
+    header .navbar.active {
+        display: flex; /* Show when active */
+    }
+
+    header .navbar a {
+        padding: 1.5rem; /* Increased padding for mobile */
+        font-size: 2rem; /* Larger text for readability */
+    }
+
+    header .icons #menu-bars {
+        display: inline-block; /* Show mobile menu icon */
+    }
+}
+.swiper-pagination-bullet-active{
+    background:var(--green) ;
+
+}
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+
+    }
+    .dishes .box-container .box img{
+        height:auto;
+        width:100%
+    }
+    .order form .inputBox .input{
+        width: 100%;
+    }
+
+}
+
+
